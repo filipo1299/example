@@ -6,12 +6,11 @@ for($i=1;$i<=100;$i++)
 }
 
 print_r($tab);
-
-$lotto = array_rand ($tab, 100);
-echo $show_table[$lotto[0]] . " ";
-echo $show_table[$lotto[1]] . " ";
-echo $show_table[$lotto[2]] . " ";
-echo $show_table[$lotto[3]] . " ";
-echo $show_table[$lotto[4]] . " ";
-echo $show_table[$lotto[5]] . " ";
+$table = array_rand ($tab, 100);
+echo $wejscie[$table[0]] . " ";
+echo $wejscie[$able[1]] . " ";
+echo $wejscie[$able[2]] . " ";
+echo $wejscie[$able[3]] . " ";
+echo $wejscie[$able[4]] . " ";
+echo $wejscie[$able[5]] . " ";
 ?>
