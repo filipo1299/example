@@ -18,6 +18,18 @@ for ($a = 0; $a <= 100; $a++) {
     }
 }
 //print_r($tab);
+//zad4,5,6
+$info = array('marek@wp.pl' => 2
+, 'magda@wp.pl' => 50
+, 'arek@wp.pl' => 40
+, 'aniawp.pl' => 80);
+
+foreach ($info as $key => $value)
+    if ($value > 50){
+        echo $key . " -> " . $value . "<br>";}
+foreach ($info as $key => $value)
+    echo $wynik=strstr($key, '@')."<br>";
+
 ///zad8
 
 function returnNumer($c)
