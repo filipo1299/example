@@ -8,7 +8,7 @@ for ($i = 0; $i <= 100; $i++) {
         if ($numbers[$j] == $numbers[$i]) --$i;
 
 }
-print_r($numbers);
+//print_r($numbers);
 ////zad2.
 $tab[][] = "";
 
@@ -17,4 +17,24 @@ for ($a = 0; $a <= 100; $a++) {
         $tab[$a][$b] = rand(100, 1000);
     }
 }
-print_r($tab);
+//print_r($tab);
+///zad8
+
+function returnNumer($a)
+{
+    echo($a / 2);
+}
+
+returnNumer(10);
+///zad9
+$name = "marek";
+$domain = "raz.pl";
+
+
+function returnEmail($name, $domain)
+{
+    echo($name . "@" . $domain);
+}
+
+returnEmail($name, $domain);
+
