@@ -34,7 +34,7 @@ foreach ($info as $key => $value)
 
 function returnNumer($c)
 {
-    echo($c / 2);
+    echo($c / 2)."<br>";
 }
 
 returnNumer(10);
