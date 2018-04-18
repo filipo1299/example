@@ -20,9 +20,9 @@ for ($a = 0; $a <= 100; $a++) {
 //print_r($tab);
 ///zad8
 
-function returnNumer($a)
+function returnNumer($c)
 {
-    echo($a / 2);
+    echo($c / 2);
 }
 
 returnNumer(10);
