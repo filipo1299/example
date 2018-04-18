@@ -1,15 +1,17 @@
 <?php
-function generuj_zbior($ilosc){
+$tab = array();
+for($i=1;$i<=100;$i++)
+{
+    $tab[] = $i;
+}
 
-    $ile=0;
-    $zbior_liczb=array();
-    while($ile<$ilosc){
-        $ile++;
-        $zbior_liczb[]=$ile;
-    }
-    return $zbior_liczb;
-    $zbior = generuj_zbior(50);
-    echo '<pre>';
-    print_r($zbior);
-    echo '</pre>';
+print_r($tab);
+
+$lotto = array_rand ($tab, 100);
+echo $show_table[$lotto[0]] . " ";
+echo $show_table[$lotto[1]] . " ";
+echo $show_table[$lotto[2]] . " ";
+echo $show_table[$lotto[3]] . " ";
+echo $show_table[$lotto[4]] . " ";
+echo $show_table[$lotto[5]] . " ";
 ?>
