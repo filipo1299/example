@@ -10,14 +10,30 @@ for ($i = 0; $i <= 100; $i++) {
 }
 //print_r($numbers);
 ////zad2.
-$tab[][] = "";
-
-for ($a = 0; $a <= 100; $a++) {
-    for ($b = 0; $b <= 100; $b++) {
-        $tab[$a][$b] = rand(100, 1000);
+    
+$table_two_dimensional = array();
+for ($x = 0; $x < 10; $x++) {
+    $row = array();
+    for ($y = 0; $y < 10; $y++) {
+        $row[] = rand(0,100);
     }
+    $table_two_dimensional[] = $row;
 }
-//print_r($tab);
+
+print_r($table_two_dimensional);
+//zad3
+$cols = rand(50,100); 
+$n = rand(50,100);    
+$table = array();
+for ($f = 0; $f < $n; $f++) {
+    $row = array();
+    for ($l = 0; $l < $cols; $l++) {
+        $row[] = 1;
+    }
+    $table[] = $row;
+}
+
+print_r($table);
 //zad4,5,6
 $info = array('marek@wp.pl' => 2
 , 'magda@wp.pl' => 50
