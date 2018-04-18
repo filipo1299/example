@@ -1,16 +1,11 @@
 <?php
-$tab = array();
-for($i=1;$i<=100;$i++)
-{
-    $tab[] = $i;
-}
+$liczby = array();
 
-print_r($tab);
-$table = array_rand ($tab, 100);
-echo $show_table[$table[0]] . " ";
-echo $show_table[$table[1]] . " ";
-echo $show_table[$table[2]] . " ";
-echo $show_table[$table[3]] . " ";
-echo $show_table[$table[4]] . " ";
-echo $show_table[$table[5]] . " ";
-?>
+for ($i=0 ; $i<=100 ;$i++ )
+{
+    $liczby[$i] = rand(0,100);
+    for ($j=0 ; $j<$i ; ++$j)
+        if ( $liczby[$j] == $liczby[$i] ) --$i;
+
+}
+print_r($liczby);
