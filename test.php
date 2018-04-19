@@ -38,7 +38,7 @@ print_r($table);
 $info = array('marek@wp.pl' => 2
 , 'magda@wp.pl' => 50
 , 'arek@wp.pl' => 40
-, 'aniawp.pl' => 80);
+, 'ania@wp.pl' => 80);
 
 foreach ($info as $key => $value)
     if ($value > 50){
