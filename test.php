@@ -44,7 +44,7 @@ foreach ($info as $key => $value)
     if ($value > 50){
         echo $key . " -> " . $value . "<br>";}
 foreach ($info as $key => $value)
-    echo $wynik=strstr($key, '@')."<br>";
+    echo strstr($key, '@')."<br>";
 
 ///zad8
 
